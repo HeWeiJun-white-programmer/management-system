@@ -1,0 +1,58 @@
+body {
+    text-align: center;
+    background: url(../image/登录.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/**标题**/
+
+.one {
+    color: rgb(57, 11, 221);
+    font: 700 56px 微软雅黑;
+    text-align: center;
+}
+
+
+/**控件盒子**/
+
+.div2 {
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: rgba(70, 190, 206, 0.2);
+    width: 412px;
+    height: 192px;
+    text-align: center;
+}
+
+
+/**文本控件**/
+
+.div2 .div1 {
+    text-align: center;
+    width: 200x;
+    height: 31px;
+    tab-size: 23em;
+    margin: 5px auto;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+
+/**按钮控件**/
+
+.submit {
+    width: 100px;
+    height: 40px;
+}
+.b{
+    color: #000;
+}
