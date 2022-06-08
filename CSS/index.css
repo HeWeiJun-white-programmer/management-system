@@ -390,6 +390,74 @@ ol {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
+
+/* 按钮初始化 */
+.item .students .control button {
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  margin: 0px 10px;
+  color: #fff;
+  background: #007d61;
+  border: 1px solid #007d61;
+  opacity: 0.5;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.item .students .control button:active {
+  opacity: 1;
+}
+.item .students .control button::after {
+  opacity: 0;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: #007d61;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 10s;
+  -webkit-transition: all 10s;
+  -moz-transition: all 10s;
+  -ms-transition: all 10s;
+  -o-transition: all 10s;
+}
+
+.item .students .control button:active::after {
+  opacity: 1;
+  transition: all 0;
+  -webkit-transition: all 0;
+  -moz-transition: all 0;
+  -ms-transition: all 0;
+  -o-transition: all 0;
+}
+
+/* 删除按钮 */
+.dele1,
+.dele2,
+.dele3 {
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  margin: 0px 10px;
+  color: #fff;
+  background: #007d61;
+  border: 1px solid #007d61;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.dele1:active,
+.dele2:active,
+.dele3:active {
+  opacity: 1;
+}
+
 /* 表单 */
 .item .students {
   width: 1690px;
@@ -431,7 +499,7 @@ ol {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-} 
+}
 .item .students .tables {
   width: 1650px;
   height: auto;
@@ -472,61 +540,13 @@ ol {
 .hhover {
   background-color: #ccc;
 }
-
-/* 按钮初始化 */
-.item .students .control button {
-  width: 80px;
-  height: 40px;
-  margin: 0px 10px;
-  color: #fff;
-  background: #007d61;
-  border: 1px solid #007d61;
-  border-radius: 10px;
-  opacity: 0.7;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  transition:  0.1s;
-  -webkit-transition:  0.1s;
-  -moz-transition:  0.1s;
-  -ms-transition:  0.1s;
-  -o-transition:  0.1s;
-}
-/* 按钮 */
-.item .students .control button:active {
-  width: 80px;
-  height: 40px;
-  transition: all 0.5s;
-  margin: 0px 10px;
-  color: rgb(255, 255, 255);
-  background: #007d61;
-  opacity: 1;
-  border: 2px solid #fff;
-  box-shadow: 2px 2px 6px #999;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.item .students .control button:after {
-  content: " ";
-  display: block;
-  transition:  all 1.8s;
-  margin: 0px 10px;
-  color: rgb(255, 255, 255);
-  background: #007d61;
-  opacity: 1;
-  box-shadow: 2px 2px 6px #999;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  -webkit-transition:  all 1.8s;
-  -moz-transition:  all 1.8s;
-  -ms-transition:  all 1.8s;
-  -o-transition:  all 1.8s;
+/* 模态框 */
+.bg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.2);
 }
