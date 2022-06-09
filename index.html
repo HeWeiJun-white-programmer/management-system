@@ -19,8 +19,8 @@
         <div class="nav1">
           <ul>
             <li>
-              <a href="javascript:;">消息</a>
-              <a href="javascript:;">***</a>
+              <!-- <a href="javascript:;">消息</a>
+              <a href="javascript:;">***</a> -->
               <a href="./denlu.html">退出</a>
             </li>
           </ul>
@@ -146,8 +146,9 @@
               <div class="item" style="display: block">
                 <div><div class="homepage">欢迎来到新生入学管理系统</div></div>
               </div>
-              <div class="item"><!-- 系统优化-->
-                <div class="system">  
+              <div class="item">
+                <!-- 系统优化-->
+                <div class="system">
                   <p>
                     此系统包括学生基本信息核对、分班管理、收费管理、宿舍管理四个模块
                   </p>
@@ -168,160 +169,194 @@
                   </ul>
                 </div>
               </div>
-              <div class="item">    
+              <div class="item">
                 <div class="pwd">
-                  <div class="password"><form action="post"><p>修改密码信息</p> <hr>
-                  <div>  <label for="">原密码</label><br/>
-                    <input type="password" placeholder="原密码"/><br/></div>
-                    <div><label for="">新密码</label> <br/>
-                        <input type="password" placeholder="新密码"/><br/></div>
-                  <div>  <label for="">确认密码</label> <br/>
-                    <input type="password" placeholder="确认密码" /><br/>
-                    <button type="button" onclick="alert('修改成功')">提交</button></div>
-                  </form></div>
+                  <div class="password">
+                    <form action="post">
+                      <p>修改密码信息</p>
+                      <hr />
+                      <div>
+                        <label for="">原密码</label><br />
+                        <input type="password" placeholder="原密码" /><br />
+                      </div>
+                      <div>
+                        <label for="">新密码</label> <br />
+                        <input type="password" placeholder="新密码" /><br />
+                      </div>
+                      <div>
+                        <label for="">确认密码</label> <br />
+                        <input type="password" placeholder="确认密码" /><br />
+                        <button type="button" onclick="alert('修改成功')">
+                          提交
+                        </button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
               <div class="item">
                 <p>个人信息</p>
                 <div class="person">
-                    <div class="personal"> 
-                        <div>
-                        <table border="1" cellspacing="0" cellpadding="0">
-                          <thead>
-                            <tr>
-                             <th colspan="2"> 个人信息</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>学号</td>
-                              <td>值</td>
-                            </tr>
-                            <tr>
-                              <td>姓名</td>
-                              <td>值</td>
-                            </tr>
-                            <tr>
-                              <td>性别</td>
-                              <td>值</td>
-                            </tr>
-                            <tr>
-                              <td>班级</td>
-                              <td>值</td>
-                            </tr>
-                            <tr>
-                              <td>年龄</td>
-                              <td>值</td>
-                            </tr>
-                            <tr>
-                              <td>专业</td>
-                              <td>值</td>
-                            </tr>
-                            <tr>
-                              <td>手机电话</td>
-                              <td>值</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                     <button>确认信息</button> </div>
-                      
+                  <div class="personal">
+                    <div>
+                      <table border="1" cellspacing="0" cellpadding="0">
+                        <thead>
+                          <tr>
+                            <th colspan="2">个人信息</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>学号</td>
+                            <td>值</td>
+                          </tr>
+                          <tr>
+                            <td>姓名</td>
+                            <td>值</td>
+                          </tr>
+                          <tr>
+                            <td>性别</td>
+                            <td>值</td>
+                          </tr>
+                          <tr>
+                            <td>年龄</td>
+                            <td>值</td>
+                          </tr>
+                          <tr>
+                            <td>专业</td>
+                            <td>值</td>
+                          </tr>
+                          <tr>
+                            <td>手机电话</td>
+                            <td>值</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button>确认信息</button>
                     </div>
+                  </div>
                 </div>
-              </div>
-              <div class="item">
-         <div class="students">
-                      <span> <p>学生列表</p></span>
-                <div class="control">
-                    <label for="">学号</label><br>
-                    <input type="text" name="" value=""><button type="">查询</button><button type="">添加</button><button type="">批量删除</button>
-                </div>
-                <div class="tables">
-                  <table >
-                    <thead>
-                      <tr>
-                        <td>&nbsp &nbsp</td>
-                        <td>学号</td>
-                        <td>姓名</td>
-                        <td>性别</td>
-                        <td>班级</td>
-                        <td>专业</td>
-                        <td>年龄</td>
-                        <td>联系电话</td>
-                        <td>操作</td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><input type="checkbox"></td>
-                        <td>学号</td>
-                        <td>姓名</td>
-                        <td>性别</td>
-                        <td>班级</td>
-                        <td>专业</td>
-                        <td>年龄</td>
-                        <td>联系电话</td>
-                        <td><button class="dele1">删除</button></td>
-                      </tr>
-                      <tr>
-                        <td><input type="checkbox"></td>
-                        <td>学号</td>
-                        <td>姓名</td>
-                        <td>性别</td>
-                        <td>班级</td>
-                        <td>专业</td>
-                        <td>年龄</td>
-                        <td>联系电话</td>
-                        <td><button class="dele1">删除</button></td>
-                      </tr>  <tr>
-                        <td><input type="checkbox"></td>
-                        <td>学号</td>
-                        <td>姓名</td>
-                        <td>性别</td>
-                        <td>班级</td>
-                        <td>专业</td>
-                        <td>年龄</td>
-                        <td>联系电话</td>
-                        <td><button class="dele1">删除</button></td>
-                      </tr>  <tr>
-                        <td><input type="checkbox"></td>
-                        <td>学号</td>
-                        <td>姓名</td>
-                        <td>性别</td>
-                        <td>班级</td>
-                        <td>专业</td>
-                        <td>年龄</td>
-                        <td>联系电话</td>
-                        <td><button class="dele1">删除</button></td>
-                      </tr>  <tr>
-                        <td><input type="checkbox"></td>
-                        <td>学号</td>
-                        <td>姓名</td>
-                        <td>性别</td>
-                        <td>班级</td>
-                        <td>专业</td>
-                        <td>年龄</td>
-                        <td>联系电话</td>
-                        <td><button class="dele1">删除</button></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-            </div>
               </div>
               <div class="item">
                 <div class="students">
-                  <span><p>班级列表</p>
-                  </span>
-                <div class="control">
-                    <label for="">班级列表</label>
-                    <input type="text" name="" value=""><button type="">查询</button>
-                    <button type="">添加</button><button type="">批量删除</button>
-                </div>
-                <div class="tables">
-                <table>
-                    <thead>
+                  <span> <p>学生列表</p></span>
+                  <div class="control">
+                    <label for="">学号</label><br />
+                    <input
+                      type="text"
+                      name=""
+                      value=""
+                      placeholder="请输入学号"
+                    /><button type="">查询</button><button type="">添加</button
+                    ><button type="">批量删除</button>
+                  </div>
+                  <div class="tables">
+                    <table>
+                      <thead>
                         <tr>
-                          <td>&nbsp</td>
+                          <td>学号</td>
+                          <td>姓名</td>
+                          <td>性别</td>
+
+                          <td>专业</td>
+                          <td>年龄</td>
+                          <td>联系电话</td>
+                          <td>操作</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>学号</td>
+                          <td>姓名</td>
+                          <td>性别</td>
+
+                          <td>专业</td>
+                          <td>年龄</td>
+                          <td>联系电话</td>
+                          <td>
+                            <input type="checkbox" /><button class="dele1">
+                              删除
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>学号</td>
+                          <td>姓名</td>
+                          <td>性别</td>
+
+                          <td>专业</td>
+                          <td>年龄</td>
+                          <td>联系电话</td>
+                          <td>
+                            <input type="checkbox" /><button class="dele1">
+                              删除
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>学号</td>
+                          <td>姓名</td>
+                          <td>性别</td>
+
+                          <td>专业</td>
+                          <td>年龄</td>
+                          <td>联系电话</td>
+                          <td>
+                            <input type="checkbox" /><button class="dele1">
+                              删除
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>学号</td>
+                          <td>姓名</td>
+                          <td>性别</td>
+
+                          <td>专业</td>
+                          <td>年龄</td>
+                          <td>联系电话</td>
+                          <td>
+                            <input type="checkbox" /><button class="dele1">
+                              删除
+                            </button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>学号</td>
+                          <td>姓名</td>
+                          <td>性别</td>
+
+                          <td>专业</td>
+                          <td>年龄</td>
+                          <td>联系电话</td>
+                          <td>
+                            <input type="checkbox" /><button class="dele1">
+                              删除
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="students">
+                  <span><p>班级列表</p> </span>
+                  <div class="control">
+                    <label for="">班级列表</label>
+                    <input
+                      type="text"
+                      name=""
+                      value=""
+                      placeholder="请输入学号"
+                    /><button type="">查询</button> <button type="">添加</button
+                    ><button type="">批量删除</button>
+                  </div>
+                  <div class="tables">
+                    <table>
+                      <thead>
+                        <tr>
                           <td>学号</td>
                           <td>姓名</td>
                           <td>班级</td>
@@ -331,56 +366,81 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td><input type="checkbox"></td>
                           <td>学号</td>
                           <td>姓名</td>
                           <td>班级</td>
                           <td>专业</td>
-                          <td><button class="dele2">删除</button></td>
+                          <td>
+                            <input type="checkbox" /><button class="dele2">
+                              删除
+                            </button>
+                          </td>
                         </tr>
-                </table>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-                 </div>
-               </div>
+              </div>
               <div class="item">
-                 <div class="students">  <span><p>班级查询</p></span>
-                    <div class="control">
-                   <label for="">班级查询</label>
-                   <input type="text" name="" value=""><button type="">查询</button>
-                   </div>
-                <div class="tables">
-               <table>
-                   <thead>
-                       <tr>
-                         <td>学号</td>
-                         <td>姓名</td>
-                         <td>班级</td>
-                         <td>专业</td>
-                        
-                       </tr>
-                     </thead>
-                     <tbody>
-                       <tr>
-                         <td>学号</td>
-                         <td>姓名</td>
-                         <td>班级</td>
-                         <td>专业</td>
-                        
-                       </tr>
-               </table>
+                <div class="students">
+                  <span><p>班级查询</p></span>
+                  <div class="control">
+                    <label for="">班级查询</label>
+                    <input
+                      type="text"
+                      name=""
+                      value=""
+                      placeholder="请输入学号"
+                    /><button type="">查询</button>
+                  </div>
+                  <div class="tables">
+                    <table>
+                      <thead>
+                        <tr>
+                          <td>学号</td>
+                          <td>姓名</td>
+                          <td>班级</td>
+                          <td>专业</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>学号</td>
+                          <td>姓名</td>
+                          <td>班级</td>
+                          <td>专业</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-                </div>
-               </div>
+              </div>
               <div class="item">
-              <div class="students">
+                <div class="students">
+                  <img
+                    src="./image/二维码.png"
+                    alt=""
+                    onclick="document.querySelector('img').style.display='none'"
+                  />
                   <span><p>缴费管理</p></span>
                   <div class="control">
-                <label for="">费用查询</label>
-                <input type="text" name="" value=""><button type="">查询</button>
-                </div>
-                   <div class="tables">
-                <table>
-                    <thead>
+                    <label for="">费用查询</label>
+                    <input
+                      type="text"
+                      name=""
+                      value=""
+                      placeholder="请输入学号"
+                    /><button type="">查询</button>
+                    <button
+                      type=""
+                      onclick="document.querySelector('img').style.display='block'"
+                    >
+                      缴费
+                    </button>
+                  </div>
+                  <div class="tables">
+                    <table>
+                      <thead>
                         <tr>
                           <td>班级</td>
                           <td>学号</td>
@@ -400,61 +460,35 @@
                           <td>宿舍费</td>
                           <td>总费用</td>
                           <td>缴费状态</td>
-                   
                         </tr>
-                </table>
-                 </div>
-               </div>
-               </div>
-               <div class="item">
-                <div class="students"> <span><p>宿舍管理</p></span>
-                <div class="control">
-            <label for="">宿舍管理</label>
-            <input type="text" name="" value=""><button type="">查询</button><button type="">添加</button><button type="">批量删除</button>
+                      </tbody>
+                    </table>
                   </div>
-               <div class="tables">
-            <table>
-                <thead>
-                    <tr>
-                      <td>&nbsp</td>
-                      <td>宿舍编号</td>
-                      <td>学号</td>
-                      <td>姓名</td>
-                      <td>总人数</td>
-                      <td>已住人数</td>
-                      <td>操作</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><input type="checkbox"></td>
-                      <td>宿舍编号</td>
-                      <td>学号</td>
-                      <td>姓名</td>
-                      <td>总人数</td>
-                      <td>已住人数</td>
-                      <td><button class="dele3">删除</button></td>
-                    </tr>
-            </table>
-              </div>
-             </div>
+                </div>
               </div>
               <div class="item">
-            <div class="students">  <span><p>宿舍查询</p></span>
-                <div class="control">
-                <label for="">宿舍管理</label>
-                <input type="text" name="" value=""><button type="">查询</button>
-               </div>
-               <div class="tables">
-                <table>
-                    <thead>
+                <div class="students">
+                  <span><p>宿舍管理</p></span>
+                  <div class="control">
+                    <label for="">宿舍管理</label>
+                    <input
+                      type="text"
+                      name=""
+                      value=""
+                      placeholder="请输入学号"
+                    /><button type="">查询</button><button type="">添加</button
+                    ><button type="">批量删除</button>
+                  </div>
+                  <div class="tables">
+                    <table>
+                      <thead>
                         <tr>
                           <td>宿舍编号</td>
                           <td>学号</td>
                           <td>姓名</td>
                           <td>总人数</td>
                           <td>已住人数</td>
-                        
+                          <td>操作</td>
                         </tr>
                       </thead>
                       <tbody>
@@ -464,14 +498,122 @@
                           <td>姓名</td>
                           <td>总人数</td>
                           <td>已住人数</td>
-                         
+                          <td>
+                            <input type="checkbox" /><button class="dele3">
+                              删除
+                            </button>
+                          </td>
                         </tr>
-                </table>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="students">
+                  <span><p>宿舍查询</p></span>
+                  <div class="control">
+                    <label for="">宿舍管理</label>
+                    <input
+                      type="text"
+                      name=""
+                      value=""
+                      placeholder="请输入学号"
+                    /><button type="">查询</button>
+                  </div>
+                  <div class="tables">
+                    <table>
+                      <thead>
+                        <tr>
+                          <td>宿舍编号</td>
+                          <td>学号</td>
+                          <td>姓名</td>
+                          <td>总人数</td>
+                          <td>已住人数</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>宿舍编号</td>
+                          <td>学号</td>
+                          <td>姓名</td>
+                          <td>总人数</td>
+                          <td>已住人数</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
             </div>
-             </div>
-            </div>
+          </div>
         </div>
-    </div> 
-  </div> <div class="bg"></div> </body>
+      </div>
+      <div class="bg"></div>
+      <!--模态框-->
+      <div class="hightlight">
+        <div>
+          <label for="">学号:</label>
+          <input type="text" placeholder="请输入学号" />
+          <label for="">姓名:</label>
+          <input type="text" placeholder="请输入姓名" />
+          <label for="">性别:</label>
+          <input type="text" placeholder="请输入性别" />
+          <label for="">专业:</label>
+          <input type="text" placeholder="请输入专业" />
+          <label for="">年龄:</label>
+          <input type="text" placeholder="请输入年龄" />
+          <label for="">联系电话:</label>
+          <input type="text" placeholder="请输入联系电话" />
+          <button onclick="alert('添加成功')">确认添加</button>
+          <div
+            class="off"
+            onclick="document.querySelector('.hightlight').style.display='none'"
+          >
+            关闭
+          </div>
+        </div>
+      </div>
+      <div class="hightlight1">
+        <div>
+          <label for="">学号:</label>
+          <input type="text" placeholder="请输入学号" />
+          <label for="">姓名:</label>
+          <input type="text" placeholder="请输入姓名" />
+          <label for="">班级:</label>
+          <input type="text" placeholder="请输入班级" />
+          <label for="">专业:</label>
+          <input type="text" placeholder="请输入专业" />
+          <button onclick="alert('添加成功')">确认添加</button>
+          <div
+            class="off"
+            onclick="document.querySelector('.hightlight1').style.display='none'"
+          >
+            关闭
+          </div>
+        </div>
+      </div>
+      <div class="hightlight2">
+        <div>
+          <label for="">宿舍编号:</label>
+          <input type="text" placeholder="请输入宿舍编号" />
+          <label for="">学号:</label>
+          <input type="text" placeholder="请输入学号" />
+          <label for="">姓名:</label>
+          <input type="text" placeholder="请输入姓名" />
+          <label for="">总人数:</label>
+          <input type="text" placeholder="请输入总人数" />
+          <label for="">已住人数:</label>
+          <input type="text" placeholder="请输入已住人数" />
+          <button onclick="alert('添加成功')">确认添加</button>
+          <div
+            class="off"
+            onclick="document.querySelector('.hightlight2').style.display='none'"
+          >
+            关闭
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
