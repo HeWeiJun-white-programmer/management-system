@@ -10,26 +10,80 @@
 </head>
 
 <body>
-    <div><img src="" alt=""></div>
+   <!--  <div><img src="" alt=""></div>
     <div>
         <h1 class="one">新生入学系统</h1>
-    </div>
+    </div -->>
     <hr>
-    <div class="div2">
-        <!--为主要控件-->
-        <div class="div2">
-            <form action="index.html">
-
-                <input class="div1" type="text" name="请输入学号" placeholder="账号">
-                <br>
-                <input class="div1" type="password" name="密码" placeholder="密码">
-                <div>
-                    <input class="submit" type="submit" name="登录" placeholder="登录">
+    <div class="wrap">
+        <div class="wrap-box">
+            <div class="box-content">
+                <div class="sign">
+                    <h2 class="title">没有账号吗？</h2>
+                    <p class="desc">点击这里注册一个账号</p>
+                    <button type="button" class="get-register">注册</button>
                 </div>
-            </form>
+                <div class="login">
+                    <h2 class="title">已经有账号了吗？</h2>
+                    <p class="desc">点击这里登录</p>
+                    <button type="button" class="get-login">登录</button>
+                </div>
+            </div>
+    
+            <div class="manager-box">
+                <div class="login-part fadein">
+                    <h3>登录</h3>
+                    <div class="input-box">
+                        <input type="text" placeholder="用户名">
+                        <i class="iconfont icon-wo"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="密码">
+                        <i class="iconfont icon-mima"></i>
+                    </div>
+                    <div class="buttons clearfix">
+                        <a href="javascript:;">忘记密码？</a>
+                        <button type="button" class="btn-login fr">登录</button>
+                    </div>
+                </div>
+                <div class="sign-part fadeout">
+                    <h3>注册</h3>
+                    <div class="input-box">
+                        <input type="text" placeholder="用户名">
+                        <i class="iconfont icon-wo"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="密码">
+                        <i class="iconfont icon-mima"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" placeholder="确认密码">
+                        <i class="iconfont icon-mima"></i>
+                    </div>
+                    <div class="buttons clearfix">
+                        <button type="button" class="btn-register fr">注册</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+            $(".get-login").click(function () {
+        $(".manager-box").removeClass("left").addClass("right");
+        $(".sign-part").addClass("fadein").removeClass("fadeout");
+        $(".login-part").addClass("fadeout").removeClass("fadein");
+    });
 
+    $(".get-register").click(function () {
+        $(".manager-box").removeClass("right").addClass("left");
+        $(".sign-part").addClass("fadeout").removeClass("fadein");
+        $(".login-part").addClass("fadein").removeClass("fadeout");
+    });
+    $('.btn-login').click(function () {
+        location.href='./index.html'
+    })
+    </script>
 
 </body>
 
